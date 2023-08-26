@@ -4,10 +4,10 @@ You can use this template in your project.
 If you don't know Django. Here is a little tutorial  
 
 ## Install Django
-
+```
 pip install django
-
-## Generate default files
+```
+## Create Project
 
 django-admin startproject (project name)
 
