@@ -3,7 +3,7 @@
 You can use this template in your project.  
 Create a superuser because there is no existing superuser.
 
-Install Django
+## Install Django
 
 ```
 pip install django
