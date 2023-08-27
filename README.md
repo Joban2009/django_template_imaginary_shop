@@ -1,7 +1,12 @@
 # DJANGO TEMPLATE - IMAGINARY FRUIT SHOP
 
-You can use this template in your project.  
-Create a superuser because there is no existing superuser.
+You can use this template in your project.
+
+## Note:
+
+Default UserName - **admin**  
+Default Password - **admin@123**  
+You can change it
 
 ## Install Django
 
