@@ -19,3 +19,9 @@ pip install django
 ```
 python manage.py runserver
 ```
+
+## Create SuperUser
+
+```
+python manage.py createsuperuser
+```
