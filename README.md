@@ -13,3 +13,9 @@ You can change it
 ```
 pip install django
 ```
+
+## Run Server
+
+```
+python manage.py runserver
+```
