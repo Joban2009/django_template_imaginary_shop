@@ -1,0 +1,72 @@
+{% extends 'base.html' %}
+{% block title %}Home{% endblock title %}
+{% block style %}
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.btn-primary {
+  display: inline;
+  font-size: calc(0.7vw + 8px);
+  padding: 3px 5px;
+  margin: 0 7vw;
+  background-color: #4666f4;
+  color: white;
+  border-radius: 20px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: calc(20vw + 100px);
+  height: calc(20vw + 100px);
+  margin: 10px;
+  border-radius: 20px;
+  border: 2px solid #000;
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  height: fit-content;
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
+  border-bottom: 2px solid #000;
+}
+
+.cardText {
+  font-size: calc(0.8vw + 7px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 5px;
+}
+
+.cardBottom {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1vw;
+}
+{% endblock style %}
+{% block main %}
+<div class="flex">
+    {% for items in product %}
+        <div class="card">
+            <img src="https://source.unsplash.com/1080x720/?{{ items.Item }},fruit">
+            <div class="cardBottom">
+                <div class="cardText">
+                    <div>Item</div>
+                    <div>{{ items.Item }}</div>
+                </div>
+                <div class="cardText">
+                    <div>Price</div>
+                    <div>{{ items.Price }}</div>
+                </div>
+                <div class="btn-primary">Order Now</div>
+            </div>
+        </div>
+    {% endfor %}
+</div>
+{% endblock main %}

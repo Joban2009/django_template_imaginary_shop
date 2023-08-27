@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock title %} | Fruit Shop</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Poppins;
+        }
+
+        .circle {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background: #000;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: rgb(147, 172, 208);
+            flex-wrap: wrap;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            width: 100px;
+            height: 100px;
+            margin: 5px;
+        }
+
+        .logo svg {
+            border-radius: 50%;
+        }
+
+        .navTab {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .btn {
+            border: 2px solid black;
+            border-radius: 20px;
+            padding: 8px;
+            margin: 8px;
+            font-weight: bold;
+            cursor: pointer;
+            font-size: calc(1vw + 8px);
+        }
+
+        .btn:hover {
+            background-color: black;
+            color: rgb(147, 172, 208);
+        }
+
+        {% block style %}{% endblock style %}
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <div class="logo">
+            <div class="circle"></div>
+        </div>
+        <div class="navTab">
+            <div class="btn">Home</div>
+            <div class="btn">Services</div>
+            <div class="btn">About</div>
+            <div class="btn">Contact</div>
+        </div>
+    </div>
+    {% block main %}{% endblock main %}
+</body>
+
+</html>
